@@ -1,0 +1,16 @@
+ 
+
+Rincian yang dibutuhkan :
+Hardware : 
+-	Stand alone server
+-	Switch/hub 12 port
+-	Cable LAN
+-	Komputer kasir
+-	Komputer touch screen pelanggan
+-	All in one komputer koki
+Software :
+-	Apache
+-	MySql
+-	JRE
+-	JDK
+-	Internet Browser
