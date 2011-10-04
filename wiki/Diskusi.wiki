@@ -1,0 +1,59 @@
+PERTEMUAN 9
+
+= Introduction =
+
+hari ini kita mendiskusikan tentang :
+
+1. Pembagian tugas.
+2. Brainstorming Issue.
+3. Breakdown Konsep.
+4. pembuatan GUI design.
+
+
+= Details =
+
+
+1. Fahrian  : 
+
+Menangani seputar  Customer 
+Konsep : 
+a.	setiap meja memiliki nomer meja yang sudah di default.
+b.	Customer cukup memasukkan daftar makanan yang di pesan tanpa memasukkan nomor meja yang ditempati. Kemudian menekan tombol OK. Data akan dikirim ke koki. Pada tampilan koki, koki dapat menekan habis apabila makanan atau minuman yang dipesan customer telah habis persediaannya di dapur. Kemudian feedback dari koki diterima oleh customer. Lalu customer dapat memilih ulang makanan atau minuman yang akan dipesan sesuai dengan hasil feedback dari koki. Apabila customer sudah sepakat dengan pesanannya, maka data pesanan akan kembali ke koki. Kemudian data entrain yang terakhir tadi dimasukkan koki ke bagian kasir.  
+
+Issue : 
+c.	kodingan untuk databasenya lebih banyak dan beragam.
+d.	Customer salah memilih makanan / minuman yang di pesan. 
+
+2. Riko : 
+Menangani seputar Kasir
+Konsep : 
+a.	kasir menerima data dari koki. Kemudian pada interface kasir terdapat tombol Lunas yang juga sekaligus memberikan perintah untuk melakukan cetak struk. 
+b.	Kasir diberikan mempunyai wewenang untuk  melihat database. 
+
+Issue : 
+a.	Tagihan customer tidak keluar pada tampilan interface.
+b.	Data validasi pemesanan tidak sesuai dengan pesanan dari customer. 
+
+3. Susilo : 
+Menangani seputar Koki
+Konsep : 
+a.	Dari kustomer masuk ke koki, kemudian data pemesanan divalidasi. Dengan 2 macam validasi yaitu masih ada atau sudah habis. 
+
+Issue : 
+a.	Data pesanan ke customer tidak masuk ke koki. 
+b.	Data validasi tidak dapat kembali ke customer. 
+c.	Data validasi salah masuk ke meja customer yang lain. 
+
+4. Nasrul : 
+Menangani masalah Database
+Konsep : 
+a.	Semua data yang dimasukkan secara otomatis akan masuk ke database. 
+b.	Requese dari database akan dikirim ke bagian yang membutuhkan.
+
+Issue : 
+a.	Database tidak terkoneksi dengan salah satu / beberapa bagian dari entitas yang ada, sehingga data yang ingin ditampilkan tidak sesuai dengan keinginan atau bahkan gagal untuk ditampilkan. 
+b.	Database telah terkoneksi dengan entitas, namun masih ada sedikit kesalahan sehingga informasi yang diberikan tidak sesuai dengan keinginan. 
+
+
+5. Metode yang digunakan 
+Metode yang kami gunakan adalah metode Water Fall 
