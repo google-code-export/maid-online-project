@@ -32,9 +32,14 @@ D. Rincian yang dibutuhkan :
    - Komputer kasir
    - Komputer touch screen pelanggan
    - All in one komputer koki
+
    Software :
    - Apache
    - MySql
    - JRE
    - JDK
    - Internet Browser
+
+E. Metode Pengembangan
+
+   Metode yang digunakan kelompok kami adalah waterfall
