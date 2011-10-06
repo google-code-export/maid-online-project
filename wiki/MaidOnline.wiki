@@ -1,4 +1,4 @@
-A. Latar Belakang
+= A. Latar Belakang =
 
    Lamanya antrian merupakan pemandangan yang biasa kita jumpai di kedai atau restoran manapun yang ada di negara kita. Banyaknya bermunculan kedai makanan di negara kita seakan menjadi trend yang tidak bisa dihentikan, didukung dengan munculnya gaya hidup berwisata kuliner yang belakangan ini muncul di kalangan masyarakat kita.Kuliner merupakan salah satu hal yang cukup diminati pada saat ini. Hal ini memungkinkan terus berkembangnya teknik-teknik baru yang digunakan dalam melayani antrian yang ada. Di antaranya adalah teknologi sarana komunikasi wireless seperti mobile web yang memungkinkan melakukan pertukaran informasi jarak jauh dengan mudah. Dalam hal ini adalah teknologi mengenai web, komunikasi dan hal-hal yang melingkupinya. 
 Internet adalah alat komunikasi masal paling besar, internet mampu menampung jumlah dan volume informasi baik berupa teks, gambar, suara maupun video ratusan bahkan ribuan kali lipat dari alat komunikasi masal lainnya. Jadi, internet adalah alat komunikasi paling hebat yang pernah ada, pemanfaatannya pun kini sudah mulai marak digunakan. Setiap orang sekarang sudah mengenal internet.
@@ -6,16 +6,19 @@ Internet adalah alat komunikasi masal paling besar, internet mampu menampung jum
     Contoh yang bisa kita ambil adalah sebagian besar masyarakat kita dari semua kalangan, muda, tua, wanita, pria kini berbondong-bondong menggunakan situs jejaring sosial. Baik untuk bertukar informasi, mencari teman, mencari jaringan atau koneksi dan berbagai macam alasan lainnya. Hal ini membuktikan betapa kuatnya internet sebagai sarana komunikasi, kerena selain tidak mengenal batas, internet juga menjadi trend tersendiri bagi penggunanya. Sehingga sampai kapanpun internet pasti akan tetap ada, dan semakin berkembang berikut adalah bukti nyata pada kehidupan kita.
 
     Secara umum, komunitas dan kualitas internet di Indonesia sudah cukup memadai dan berkembang. Dengan demikian maka aplikasi pelayanan restoran berbasi web ini kami nilai akan efektif dan dapat digunakan dengan maksimal di masyarakat kita. Didukung dengan berkembangnya teknologi mobile internet membuat aplikasi yang kami kembangkan ini menjadi mudah diakses dan dapat secara maksimal digunakan dimanapun juga.
+
 Pada umumnya, faktor utama penyebab antrian yang menumpuk pada sebuah restoran adalah banyaknya pengunjung pada jam-jam makan siang dan makan malam, serta pada saat libur. Pada saat ini konsumen yang datang adalah sebagian besar konsumen sibuk yang tidak sempat membuat makanannya sendiri. Sehingga konsumen seperti ini menginginkan pelayanan yang cepat dan tanggap untuk memuaskan rasa lapar secepat mungkin. Dengan masa konsumen yang sangat besar dan juga tenaga pelayan yang minim, restoran menjadi sulit untuk memuaskan konsumen dan seringkali membuat konsumen menunggu.
+
 Untuk saat ini masih sedikit restoran yang menerapkan sistem terintegrasi dalam pelayanannya. Sudah ada beberapa restoran yang sudah menerapakan namun masih belum maksimal. Karena sistem yang ada hanya mengintegrasikan antara kasir dengan koki saja. Untuk sistem kami, kami mengintegrasikan antara seluruh elemen yang ada, yaitu konsumen, kasir, dan koki. Dan juga pada sistem kami memberikan pelayanan delivery melalui pemesanan melalui web. 
+
 Hal inilah yang kemudian mendasari kami untuk merencanakan dan merancang suatu sistem integrasi untuk restoran yang berbasis web. Sistem pelayanan yang kami rencanakan adalah sistem pelayanan restoran yang menggunakan internet sebagai media penyalur informasi yang cepat. Diharapkan dengan alokasi jangka waktu yang relatif lebih cepat serta besarnya informasi yang dapat ditampung internet, sistem ini akan secara maksimal memenuhi permintaan konsumen. Penjelasan lebih lanjut mengenai perencanaan sistem pelayanan berbasis web ini akan diuraikan pada pembahasan selanjutnya. Semoga karya ini bermanfaat untuk bangsa.
 
-B. Rumusan Masalah
+= B. Rumusan Masalah = 
 
    Permasalahan dalam Program Kreatifitas Mahasiswa Ini adalah :
 Bagaimana merancang suatu aplikasi berbasis web yang membantu sistem pelayanan restoran yang cepat  dan interaktif sehingga dapat meningkatkan kepuasan pelanggan ?
 
-C. Tujuan
+= C. Tujuan =
 
    Adapun tujuan yang akan kami capai dalam kegiatan ini diantaranya adalah   sebagai berikut :
 
@@ -24,7 +27,7 @@ C. Tujuan
 3.Meningkatkan kualitas pelayanan pada restoran
 
 
-D. Rincian yang dibutuhkan :
+= D. Rincian yang dibutuhkan : =
    Hardware : 
    - Stand alone server
    - Switch/hub 12 port
@@ -40,6 +43,6 @@ D. Rincian yang dibutuhkan :
    - JDK
    - Internet Browser
 
-E. Metode Pengembangan
+= E. Metode Pengembangan =
 
    Metode yang digunakan kelompok kami adalah waterfall
