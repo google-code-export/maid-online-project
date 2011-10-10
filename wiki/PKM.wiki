@@ -1,0 +1,9 @@
+#labels Phase-Requirements,Phase-Design,Featured
+= Introduction =
+
+Project ini juga kami masukkan ke dalam Program Kreativitas Mahasiswa bidang Karsa Cipta. Semoga bisa bermanfaat. 
+
+
+= Details =
+
+PKM KC ini merupakan Program Kreativitas Mahasiswa yang tergolong baru untuk tahun ini. Pada tahun kemarin belum ada program kreativitas bidang ini.
