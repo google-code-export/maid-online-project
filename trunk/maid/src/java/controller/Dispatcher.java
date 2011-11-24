@@ -36,15 +36,26 @@ public class Dispatcher extends HttpServlet {
             if (page.equals("pesan")) {
                   dis = request.getRequestDispatcher("Pesan.jsp");
                 } 
+        
+       
+            if (page.equals("pagekoki")) {
+                  dis = request.getRequestDispatcher("indexkoki.jsp");
+                }
+            
+            if (page.equals("pagekasir")) {
+                  dis = request.getRequestDispatcher("indexkasir.jsp");
+                }
+            
+            
+            
+            
         }
         else {
                     dis = request.getRequestDispatcher("index.jsp");
 
                 }
         dis.include(request, response);
-    
     }
-
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /** 
      * Handles the HTTP <code>GET</code> method.
