@@ -13,9 +13,8 @@
     </head>
     <body>
         <h1>Login</h1>
-        <form method='post' action='Dispatcher?page=login'>
-            <form action="Pesan.jsp">
-            </form>
+        <form method='post' action="Dispatcher?page=pesan">
+            
             <fieldset>
                 <table border=0>
                     <tr>
@@ -32,7 +31,7 @@
             Nomor Meja:
                     </td>
                     <td>
-                        <select type="dropdown" name="select" id="nomor meja" value="">
+                        <select type="dropdown" name="select" id="nomor meja" value="" />
                             <option  id="1">1</option>
                             <option  id="2">2</option>
                             <option  id="2">3</option>
@@ -44,12 +43,25 @@
             </td>
             </table>
             </fieldset>
-        </form>
-            <br>
-            <form method='post' action='Dispatcher?page=pesan'>
-              <input type='submit' value='Pesan Makanan'/> </form>
+            <form method='post' >
+            <input type='submit' value='Pesan Makanan' action='Dispatcher?page=pesan'/>
+            
+            </form>
               
+  
+</body><br/br>
+    <br/br>
+        <br/br>
+            <br/br>
+                <br/br>
+                    <br/br>           
+        <h2>
 
-       
-    </body>
+  <div align="right"><table><tr><td><a href="Dispatcher?page=pagekoki">Koki</a></td><td>&nbsp;</td><td>
+<a href="Dispatcher?page=pagekasir">Kasir</a></td></tr></table></div>
+                 
+      </h2>
+                    
+                    
+</body>            
 </html>
