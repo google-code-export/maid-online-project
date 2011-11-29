@@ -17,9 +17,9 @@
         <h1>Silahkan Pilih Pesanan</h1>
         
 Nama=
-        <%=request.getParameter("namaPelanggan") %>
+        <%= request.getParameter("namaPelanggan") %>
   , Nomor Meja=
-    <%=request.getParameter("select") %>
+    <%= request.getParameter("select") %>
 
     
   </tr>
