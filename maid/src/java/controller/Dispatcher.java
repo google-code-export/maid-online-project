@@ -31,30 +31,30 @@ public class Dispatcher extends HttpServlet {
         PrintWriter out = response.getWriter();
         String page = request.getParameter("page");
         RequestDispatcher dis = null;
-        
-        if (page != null) { 
-            if (page.equals("pesan")) {
-                  dis = request.getRequestDispatcher("Pesan.jsp");
-                } 
-        
-       
-            if (page.equals("pagekoki")) {
-                  dis = request.getRequestDispatcher("indexkoki.jsp");
-                }
-            
-            if (page.equals("pagekasir")) {
-                  dis = request.getRequestDispatcher("indexkasir.jsp");
-                }
-            
-            
-            
-            
-        }
-        else {
-                    dis = request.getRequestDispatcher("index.jsp");
 
-                }
+        if (page != null) {
+            if (page.equals("pesan")) {
+                dis = request.getRequestDispatcher("Pesan.jsp");
+            } else if (page.equals("pagekoki")) {
+                dis = request.getRequestDispatcher("indexkoki.jsp");
+            } else if (page.equals("pagekasir")) {
+                dis = request.getRequestDispatcher("indexkasir.jsp");
+            } else if (page.equals("halamankoki")) {
+                dis = request.getRequestDispatcher("halamankoki.jsp");
+            } else if (page.equals("halamankasir")) {
+                dis = request.getRequestDispatcher("halamankasir.jsp");
+            } else if (page.equals("halamankasirnota")) {
+                dis = request.getRequestDispatcher("halamankasirnota.jsp");
+            }
+        
+         else {
+            dis = request.getRequestDispatcher("index.jsp");
+
+        }
+
         dis.include(request, response);
+
+      }
     }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /** 
@@ -90,5 +90,6 @@ public class Dispatcher extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 }
+
