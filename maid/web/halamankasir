@@ -1,0 +1,56 @@
+<%-- 
+    Document   : halamankasir
+    Created on : Nov 30, 2011, 11:30:50 AM
+    Author     : ACER
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <form method='post' action='Dispatcher?page=halamankasirnota'>
+        <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong> 
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+    <strong>NAMA PELANGGAN</strong></p>
+</blockquote>
+<blockquote>
+<table width="128" border="1">
+  <tr>
+    <th scope="row"><form id="form2" name="form2" method="post" action="">
+      <label>
+        <input name="textarea" type="text" id="textarea" value="" size="20" />
+      </label>
+    </form></th>
+  </tr>
+</table>
+<p><strong>MEJA PELANGGAN</strong>
+<table width="87" border="1">
+  <tr>
+    <th width="77" scope="row"><form id="form3" name="form3" method="post" action="">
+      <label>
+        <input name="textarea" type="text" id="textarea" value="" size="8" />
+      </label>
+    </form></th>
+  </tr>
+</table>
+<p>
+    <input type="submit" value="SEARCH" />
+<p>&nbsp;</p>
+</form>
+</body>
+</html>
+
+<%-- 
