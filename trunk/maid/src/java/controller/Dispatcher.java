@@ -45,8 +45,16 @@ public class Dispatcher extends HttpServlet {
                 dis = request.getRequestDispatcher("halamankasir.jsp");
             } else if (page.equals("halamankasirnota")) {
                 dis = request.getRequestDispatcher("halamankasirnota.jsp");
-            }
+            } else if (page.equals("bon_validasi")) {
+                dis = request.getRequestDispatcher("bon_validasi.jsp");
+            } else if (page.equals("terimakasih_telahpesan")) {
+                dis = request.getRequestDispatcher("terimakasih_telahpesan.jsp");
+            } else if (page.equals("index")) {
+                dis = request.getRequestDispatcher("index.jsp");
         
+            
+         
+            }
          else {
             dis = request.getRequestDispatcher("index.jsp");
 
