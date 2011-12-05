@@ -1,0 +1,98 @@
+ <%-- 
+    Document   : bon_validasi
+    Created on : Dec 1, 2011, 11:54:53 AM
+    Author     : ACER
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <form method='post' action='Dispatcher?page=terimakasih_telahpesan'>
+            
+        <table width="200" border="1">
+  <tr>
+    <th scope="row"> Nama Pemesan</th>
+  </tr>
+  <tr>
+    <th scope="row">Nomor Meja</th>
+  </tr>
+</table>&nbsp;</p>
+<table width="200" border="1">
+  <tr>
+    <th scope="row">DAFTAR YANG DIPESAN</th>
+  </tr>
+</table>
+<table width="397" border="1">
+  <tr>
+    <td width="135"><strong>MAKANAN</strong></td>
+    <td width="66">JUMLAH</td>
+    <td width="77">HARGA</td>
+    <td width="91">KETERANGAN</td>
+  </tr>
+  <tr>
+    <td>Nasi Goreng</td>
+    <td>1</td>
+    <td>Rp 10.000</td>
+    <th>HABIS</th>
+  </tr>
+  <tr>
+    <td>Bakmi Goreng</td>
+    <td>1</td>
+    <td>Rp 10.000</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Gurame Bakar</td>
+    <td>1</td>
+    <td>Rp 25.000</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>MINUMAN</strong></td>
+    <td>JUMLAH</td>
+    <td>HARGA</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Soda Gembira</td>
+    <td>1</td>
+    <td>Rp 10.000</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Milk Shake</td>
+    <td>1</td>
+    <td>Rp 9.000</td>
+    <th>HABIS</th>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="507" border="1">
+  <tr>
+    <th width="497" scope="row">Apakah Anda Yakin Dengan Pesanan Anda ?</th>
+  </tr>
+</table>
+<form id="form1" name="form1" method="post" action="">
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <h1>
+            <input type="submit" value="YA" />
+            </table>
+            <input type="submit" name="button2" id="button2" value="TIDAK" />
+          </h1>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</form>
+    </body>
+</html>
