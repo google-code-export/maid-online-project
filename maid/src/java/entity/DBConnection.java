@@ -14,7 +14,7 @@ public class DBConnection {
     Connection conn = null;
 
     public DBConnection() {
-        String URL = "jdbc:mysql://localhost:3306/pagelaranbaru";
+        String URL = "jdbc:mysql://localhost:3306/maidonline";
         String USER = "root";
         String PASS = "";
         try {
