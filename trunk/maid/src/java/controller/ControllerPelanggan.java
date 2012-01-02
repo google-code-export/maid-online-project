@@ -50,13 +50,11 @@ public class ControllerPelanggan {
                         registrasi.create(pelanggan);//eksekusi membuat objek baru dan menyimpan
 
                     } catch (Exception e) {
-                        e.printStackTrace();
-
                     }
                
             }
         }
-    }
+
 
     /**
      * Fungsi melakukan list terhadap pelanggan yang ada kedalam list
@@ -81,7 +79,6 @@ public class ControllerPelanggan {
         try {
             deletePelanggan.destroy(pelanggan.getNama()); //eksekusi menghapus
         } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
