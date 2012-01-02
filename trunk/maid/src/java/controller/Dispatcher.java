@@ -63,7 +63,7 @@ public class Dispatcher extends HttpServlet {
 
                 }
         dis.include(request, response);
-    }
+    }}
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -72,8 +72,8 @@ public class Dispatcher extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    @Override
-    protected void doGet(HttpServletRequest request = null, HttpServletResponse response)
+  @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
             processRequest(request, response);
@@ -90,7 +90,7 @@ public class Dispatcher extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doPost(HttpServletRequest request = null, HttpServletResponse response)
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
             processRequest(request, response);
@@ -107,3 +107,4 @@ public class Dispatcher extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+}
