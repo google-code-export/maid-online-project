@@ -49,7 +49,7 @@ public class JpaPelanggan {
     }
 
     /**
-     * Fungsi untuk menghapus pelanggan yang ada dengan input berupa nama dan nomormeja
+     * Fungsi untuk menghapus pelanggan yang ada dengan input berupa nama
      */
     public void destroy(String id) throws NonexistentEntityException {
         EntityManager em = null;
@@ -60,7 +60,6 @@ public class JpaPelanggan {
             try {
                 pelanggan = em.getReference(Pelanggan.class, id);
                 pelanggan.getNama();
-                pelanggan.getNomormeja ();
             } catch (EntityNotFoundException enfe) {
                 throw new NonexistentEntityException("The customer with id " + id + " has paid.", enfe);
             }
