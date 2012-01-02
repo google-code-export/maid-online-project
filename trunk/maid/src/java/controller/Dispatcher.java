@@ -3,7 +3,6 @@ package controller;
 
 import entity.Pelanggan;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -26,19 +25,15 @@ public class Dispatcher extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
         String page = request.getParameter("page");
          RequestDispatcher dis = null;
         ControllerPelanggan controller = new ControllerPelanggan(request);
         Pelanggan pelanggan = new Pelanggan();
-        String pesan = "  ";
-        request.setAttribute("pesan", pesan);
         if (page != null) { 
             if (page.equals("pesan")) {
                 controller.setRegistrasi(pelanggan);
-                if (pelanggan.getLoginstat() == true) {//dispatch u/ halaman keberhasilan registrasi
-                    dis = request.getRequestDispatcher("Pesan.jsp");
-                } 
+                dis = request.getRequestDispatcher("Pesan.jsp");
+            }
        
             if (page.equals("pagekoki")) {
                   dis = request.getRequestDispatcher("indexkoki.jsp");
@@ -47,14 +42,12 @@ public class Dispatcher extends HttpServlet {
             if (page.equals("pagekasir")) {
                   dis = request.getRequestDispatcher("indexkasir.jsp");
                 }
-            
-        }
-        else {
+       
+    } else {
                     dis = request.getRequestDispatcher("index.jsp");
-
-                }
+        }
         dis.include(request, response);
-    }}
+        }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
