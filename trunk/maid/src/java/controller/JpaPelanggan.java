@@ -142,5 +142,9 @@ public class JpaPelanggan {
         }
     }
 
+    Pelanggan findPelangganByNama(String nama) {
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
+
     
 }
