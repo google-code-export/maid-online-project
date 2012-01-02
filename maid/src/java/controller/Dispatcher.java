@@ -4,6 +4,7 @@
  */
 package controller;
 
+import entity.Pelanggan;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -30,39 +31,38 @@ public class Dispatcher extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         String page = request.getParameter("page");
-        RequestDispatcher dis = null;
-
-        if (page != null) {
+         RequestDispatcher dis = null;
+        ControllerPelanggan controller = new ControllerPelanggan(request);
+        Pelanggan pelanggan = new Pelanggan();
+        String pesan = "  ";
+        request.setAttribute("pesan", pesan);
+        if (page != null) { 
             if (page.equals("pesan")) {
-                dis = request.getRequestDispatcher("Pesan.jsp");
-            } else if (page.equals("pagekoki")) {
-                dis = request.getRequestDispatcher("indexkoki.jsp");
-            } else if (page.equals("pagekasir")) {
-                dis = request.getRequestDispatcher("indexkasir.jsp");
-            } else if (page.equals("halamankoki")) {
-                dis = request.getRequestDispatcher("halamankoki.jsp");
-            } else if (page.equals("halamankasir")) {
-                dis = request.getRequestDispatcher("halamankasir.jsp");
-            } else if (page.equals("halamankasirnota")) {
-                dis = request.getRequestDispatcher("halamankasirnota.jsp");
-            } else if (page.equals("bon_validasi")) {
-                dis = request.getRequestDispatcher("bon_validasi.jsp");
-            } else if (page.equals("terimakasih_telahpesan")) {
-                dis = request.getRequestDispatcher("terimakasih_telahpesan.jsp");
-            } else if (page.equals("index")) {
-                dis = request.getRequestDispatcher("index.jsp");
+                controller.setRegistrasi(pelanggan);
+                if (pelanggan.getLoginstat() == true) {//dispatch u/ halaman keberhasilan registrasi
+                    dis = request.getRequestDispatcher("Pesan.jsp");
+                } else {
+                    dis = request.getRequestDispatcher("Index.jsp");
+                } 
         
+       
+            if (page.equals("pagekoki")) {
+                  dis = request.getRequestDispatcher("indexkoki.jsp");
+                }
             
-         
-            }
-         else {
-            dis = request.getRequestDispatcher("index.jsp");
-
+            if (page.equals("pagekasir")) {
+                  dis = request.getRequestDispatcher("indexkasir.jsp");
+                }
+            
+            
+            
+            
         }
+        else {
+                    dis = request.getRequestDispatcher("index.jsp");
 
+                }
         dis.include(request, response);
-
-      }
     }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /** 
@@ -98,6 +98,6 @@ public class Dispatcher extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }
+    }// </editor-fold>
 }
-
+}
