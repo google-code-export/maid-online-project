@@ -4,9 +4,6 @@ package controller;
 import entity.Pelanggan;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.ParseException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -41,10 +38,7 @@ public class Dispatcher extends HttpServlet {
                 controller.setRegistrasi(pelanggan);
                 if (pelanggan.getLoginstat() == true) {//dispatch u/ halaman keberhasilan registrasi
                     dis = request.getRequestDispatcher("Pesan.jsp");
-                } else {
-                    dis = request.getRequestDispatcher("Index.jsp");
                 } 
-        
        
             if (page.equals("pagekoki")) {
                   dis = request.getRequestDispatcher("indexkoki.jsp");
@@ -53,9 +47,6 @@ public class Dispatcher extends HttpServlet {
             if (page.equals("pagekasir")) {
                   dis = request.getRequestDispatcher("indexkasir.jsp");
                 }
-            
-            
-            
             
         }
         else {
@@ -75,12 +66,7 @@ public class Dispatcher extends HttpServlet {
   @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
-            processRequest(request, response);
-        } catch (ParseException ex) {
-            Logger.getLogger(Dispatcher.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+  }
 
     /**
      * Handles the HTTP <code>POST</code> method.
@@ -92,12 +78,8 @@ public class Dispatcher extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
-            processRequest(request, response);
-        } catch (ParseException ex) {
-            Logger.getLogger(Dispatcher.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
+    
 
     /**
      * Returns a short description of the servlet.
