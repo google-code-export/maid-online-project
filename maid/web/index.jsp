@@ -1,67 +1,44 @@
 <%-- 
-    Document   : index
-    Created on : Nov 16, 2011, 11:45:31 PM
-    Author     : ACER
+    Document   : home
+    Created on : Dec 30, 2011, 5:44:26 PM
+    Author     : olisus
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Login</h1>
-        <form method='post' action="Dispatcher?page=pesan">
-            
-            <fieldset>
-                <table border=0>
-                    <tr>
-                        <td>
-            Masukkan Nama:
-                        </td>
-                        <td>
-            <input type=text name="namaPelanggan" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-
-                    <td>
-            Nomor Meja:
-                    </td>
-                    <td>
-                        <select type="dropdown" name="select" id="nomor meja" value="" />
-                            <option  id="1">1</option>
-                            <option  id="2">2</option>
-                            <option  id="2">3</option>
-                            <option  id="2">4</option>
-                            <option  id="2">5</option>
-                            <option  id="2">6</option>
-                            <option  id="2">7</option>
-                            <option  id="2">8</option>
-            </td>
-            </table>
-            </fieldset>
-            <form method='post' >
-            <input type='submit' value='Pesan Makanan' action='Dispatcher?page=pesan'/>
-            
-            </form>
-              
+<head>
+  <title>Maid Online</title>
+  <link rel="stylesheet" href="css/mainStyle.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="container">
+  <form method='post' action="Dispatcher?page=loginpelanggan">
+  <div id="header">
+    <h1 id="logo"><a></a></h1>
+  </div>
+  <div id="content">
+    <br><h3>Selamat datang di Resto Kelompok 12 RBPL</h3></br>
+	<br>Kami menyediakan berbagai macam makanan yang lezat dengan harga yang terjangkau. Kualitas masakan yang nikmat berpadu dengan resep yang telah di implementasikan dari jaman nenek moyang, semakin menambah kualitas cita rasa sejati.</br>
+	<br>Kami juga menyediakan berbagai minuman yang menyegarkan sekaligus menyehatkan. Semua unsur minuman mengandung bahan-bahan herbal yang dapat meningkatkan kebugaran tubuh.</br>
+    <br>Silahkan memesan makanan dan minuman kami dan Selamat Menikmati...[] (^_^)</br>
+    <br><input type='submit' value='Klik untuk Pesan Makanan' action='Dispatcher?page=loginpelanggan'/></br>
+  </div>
+  </form>
+  <div id="footer" align="center">
+	
+  <ul id="mainNav">
+    <li><a href="Dispatcher?page=pagekoki" title="Koki">Koki</a></li>
+    <li><a href="Dispatcher?page=pagekasir" title="Kasir">Kasir</a></li>
+  </ul>
+	
+  <ul id="metaLink">
+      <li>&copy; copyright 2012 - <a>Kelompok 12 RBPL</a> Maid Online</li>
+  </ul>
   
-</body><br/br>
-    <br/br>
-        <br/br>
-            <br/br>
-                <br/br>
-                    <br/br>           
-        <h2>
-
-  <div align="right"><table><tr><td><a href="Dispatcher?page=pagekoki">Koki</a></td><td>&nbsp;</td><td>
-<a href="Dispatcher?page=pagekasir">Kasir</a></td></tr></table></div>
-                 
-      </h2>
-                    
-                    
-</body>            
+  </div>
+    
+</div>
+</body>
 </html>
