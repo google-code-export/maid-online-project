@@ -6,11 +6,13 @@ package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.lang.Integer;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -30,12 +32,18 @@ public class Dispatcher extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         String page = request.getParameter("page");
+        HttpSession session = request.getSession();
         RequestDispatcher dis = null;
+        String nasigoyengInt = null;
 
         if (page != null) {
             if (page.equals("pesan")) {
-                dis = request.getRequestDispatcher("pesan.jsp");
-            }else if (page.equals("loginpelanggan")) {
+                String namaPelanggan = request.getParameter("namaPelanggan");
+                session.setAttribute("namaPelanggan", namaPelanggan);
+                String select = request.getParameter("select");
+                session.setAttribute("select", select);
+                dis = request.getRequestDispatcher("Pesan.jsp");
+            } else if (page.equals("loginpelanggan")) {
                 dis = request.getRequestDispatcher("loginpelanggan.jsp");
             } else if (page.equals("pagekoki")) {
                 dis = request.getRequestDispatcher("indexkoki.jsp");
@@ -47,26 +55,44 @@ public class Dispatcher extends HttpServlet {
                 dis = request.getRequestDispatcher("halamankasir.jsp");
             } else if (page.equals("halamankasirnota")) {
                 dis = request.getRequestDispatcher("halamankasirnota.jsp");
-            } else if (page.equals("bon_validasi")) {
+            } else if (page.equals("bonValidasi")) {
+                String nasigoyeng = request.getParameter("nasigoyeng");
+                session.setAttribute("nasigoyeng", nasigoyeng);
+                String bakmigoyeng = request.getParameter("bakmigoyeng");
+                session.setAttribute("bakmigoyeng", bakmigoyeng);
+                String guramebakar = request.getParameter("guramebakar");
+                session.setAttribute("guramebakar", guramebakar);
+                String ayambakar = request.getParameter("ayambakar");
+                session.setAttribute("ayambakar", ayambakar);
+                String nilabakar = request.getParameter("nilabakar");
+                session.setAttribute("nilabakar", nilabakar);
+                String odagembira = request.getParameter("odagembira");
+                session.setAttribute("odagembira", odagembira);
+                String esthe = request.getParameter("esthe");
+                session.setAttribute("esthe", esthe);
+                String eseyuk = request.getParameter("eseyuk");
+                session.setAttribute("eseyuk", eseyuk);
+                String esawet = request.getParameter("esawet");
+                session.setAttribute("esawet", esawet);
                 dis = request.getRequestDispatcher("bon_validasi.jsp");
             } else if (page.equals("terimakasih_telahpesan")) {
-                dis = request.getRequestDispatcher("terimakasih_telahpesan.jsp");
+                dis = request.getRequestDispatcher("terimakasih_telah memesan");
             } else if (page.equals("index")) {
                 dis = request.getRequestDispatcher("index.jsp");
-        
-            
-         
+
+
+
+            } else {
+                dis = request.getRequestDispatcher("index.jsp");
+
             }
-         else {
-            dis = request.getRequestDispatcher("index.jsp");
+
+            dis.include(request, response);
 
         }
-
-        dis.include(request, response);
-
-      }
     }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+
     /** 
      * Handles the HTTP <code>GET</code> method.
      * @param request servlet request
@@ -102,4 +128,3 @@ public class Dispatcher extends HttpServlet {
         return "Short description";
     }
 }
-
