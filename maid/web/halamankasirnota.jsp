@@ -1,7 +1,7 @@
 <%-- 
     Document   : halamankasirnota
     Created on : Nov 30, 2011, 11:51:03 PM
-    Author     : ACER
+    Author     : Fahrian09
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -27,7 +27,7 @@
       <td width="5">
         :</td>
       <td width="100">
-        <%= request.getParameter("namaPelanggan") %>
+        ${namaPelanggan}
     </tr>
     <tr>   
     </tr>
@@ -38,7 +38,7 @@
       <td width="5">
         :</td>
       <td width="100">
-        <%= request.getParameter("nomormeja") %>
+        ${select}
     </tr>
     <tr>
       <td>&nbsp;</td>
@@ -60,21 +60,33 @@
           </tr>
           <tr align="center">
             <td>Nasi Goreng</td>
-            <td>2</td>
+            <td>${nasigoyeng}</td>
             <td>Rp 10.000</td>
-            <td>Rp 20.000</td>
+            <td>${(nasigoyeng)*10000}</td>
           </tr>
           <tr align="center">
             <td>Bakmi Goreng</td>
-            <td>1</td>
+            <td>${bakmigoyeng}</td>
             <td>Rp 10.000</td>
-            <td>Rp 10.000</td>
+            <td>${(bakmigoyeng)*10000}</td>
           </tr>
           <tr align="center">
             <td>Gurame Bakar</td>
-            <td>1</td>
+            <td>${guramebakar}</td>
             <td>Rp 25.000</td>
-            <td>Rp 25.000</td>
+            <td>${(guramebakar)*25000}</td>
+          </tr>
+          <tr align="center">
+            <td>Ayam Bakar</td>
+            <td>${ayambakar}</td>
+            <td>Rp.33.000</td>
+            <td>${(ayambakar)*33000}</td>
+          </tr>
+          <tr align="center">
+            <td>Nila Bakar</td>
+            <td>${nilabakar}</td>
+            <td>23000</td>
+            <td>${(nilabakar)*23000}</td>
           </tr>
           <tr align="center">
             <th><strong>MINUMAN</strong></th>
@@ -84,21 +96,33 @@
           </tr>
           <tr align="center">
             <td>Soda Gembira</td>
-            <td>1</td>
+            <td>${odagembira}</td>
             <td>Rp 10.000</td>
-            <td>Rp 10.000</td>
+            <td>${(odagembira)*10000}</td>
           </tr>
           <tr align="center">
-            <td>Milk Shake</td>
-            <td>1</td>
-            <td>Rp 9.000</td>
-            <td>Rp 9.000</td>
+            <td>Es Teh</td>
+            <td>${esthe}</td>
+            <td>Rp 2.000</td>
+            <td>${(esthe)*2000}</td>
           </tr>
           <tr align="center">
-            <th>Total Harga</th>
+            <td>Es Jeruk</td>
+            <td>${eseyuk}</td>
+            <td>Rp.4.000</td>
+            <td>${(eseyuk)*4000}</td>
+          </tr>
+          <tr align="center">
+            <td>Es Dawet</td>
+            <td>${esawet}</td>
+            <td>Rp.5000</td>
+            <td>${(esawet)*5000}</td>
+          </tr>
+          <tr align="center">
+            <th>Total Harga </th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
-            <th>Rp 74.000</th>
+            <th></th>
           </tr>
       </table>
         <p>&nbsp;</p>
