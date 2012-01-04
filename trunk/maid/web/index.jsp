@@ -23,6 +23,7 @@
 	<br>Kami menyediakan berbagai macam makanan yang lezat dengan harga yang terjangkau. Kualitas masakan yang nikmat berpadu dengan resep yang telah di implementasikan dari jaman nenek moyang, semakin menambah kualitas cita rasa sejati.</br>
 	<br>Kami juga menyediakan berbagai minuman yang menyegarkan sekaligus menyehatkan. Semua unsur minuman mengandung bahan-bahan herbal yang dapat meningkatkan kebugaran tubuh.</br>
     <br>Silahkan memesan makanan dan minuman kami dan Selamat Menikmati...[] (^_^)</br>
+    <br>&nbsp;</br>
     <br><input type='submit' value='Klik untuk Pesan Makanan' action='Dispatcher?page=loginpelanggan'/></br>
   </div>
   </form>
