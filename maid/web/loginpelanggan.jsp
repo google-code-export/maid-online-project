@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : Nov 16, 2011, 11:45:31 PM
-    Author     : ACER
+    Author     : Olisus
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -26,7 +26,7 @@
           <td width="5">
             :</td>
           <td width="100">
-            <input type=text name="namaPelanggan" value="" /></td>
+           <input type=text name="namaPelanggan" value="" /></td>
         </tr>
         <tr>   
         </tr>
@@ -37,21 +37,19 @@
           <td width="5">
             :</td>
           <td>
-          <select name="nomormeja" value="">
-            <option value="" selected>- Silahkan Pilih Meja -</option>
-            <option  value="1">1</option>
-            <option  value="2">2</option>
-            <option  value="3">3</option>
-            <option  value="4">4</option>
-            <option  value="5">5</option>
-            <option  value="6">6</option>
-            <option  value="7">7</option>
-            <option  value="8">8</option></select>
+          <select type="dropdown" name="select" id="nomor meja" value=""/>
+            <option id="1">1</option>
+            <option id="2">2</option>
+            <option id="2">3</option>
+            <option id="2">4</option>
+            <option id="2">5</option>
+            <option id="2">6</option>
+            <option id="2">7</option>
+            <option id="2">8</option>
           </td>
         </tr>
         </table>   
-      
-    <br><input type='submit' value='Klik untuk Pesan Makanan' action='Dispatcher?page=pesan'/></br>
+    <br><input type='submit' value='Klik untuk Pesan Makanan' action="Dispatcher?page=pesan"/></br>
   </div>
   </form>
   <div id="footer" align="center">
