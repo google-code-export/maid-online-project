@@ -1,35 +1,26 @@
 <%-- 
     Document   : terimakasih_telahpesan
     Created on : Dec 1, 2011, 12:28:31 PM
-    Author     : ACER
+    Author     : Ricko
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <form method='post' action='Dispatcher?page=index'>
-        
-        <p>&nbsp;</p>
+<head>
+  <title>Maid Online</title>
+  <link rel="stylesheet" href="css/mainStyle.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="container">
+  <form method='post' action="Dispatcher?page=loginpelanggan">
+  <div id="header">
+    <h1 id="logo"><a></a></h1>
+  </div>
+  <div id="content">
+    
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
+
 <table width="492" border="1">
   <tr>
     <th width="482" scope="row"><h2><strong>TERIMAKASIH ANDA TELAH MEMESAN</strong></h2>
@@ -73,6 +64,17 @@
     <p>&nbsp;</p>
   </blockquote>
 </blockquote>
+      
+  </div>
+  </form>
+  <div id="footer" align="center">
+	
+  <ul id="metaLink">
+      <li>&copy; copyright 2012 - <a>Kelompok 12 RBPL</a> Maid Online</li>
+  </ul>
   
+  </div>
+    
+</div>
 </body>
 </html> 
