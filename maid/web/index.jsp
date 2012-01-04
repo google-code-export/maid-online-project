@@ -24,6 +24,7 @@
 	<br>Kami juga menyediakan berbagai minuman yang menyegarkan sekaligus menyehatkan. Semua unsur minuman mengandung bahan-bahan herbal yang dapat meningkatkan kebugaran tubuh.</br>
     <br>Silahkan memesan makanan dan minuman kami dan Selamat Menikmati...[] (^_^)</br>
     <br>&nbsp;</br>
+    <br>&nbsp;</br>
     <br><input type='submit' value='Klik untuk Pesan Makanan' action='Dispatcher?page=loginpelanggan'/></br>
   </div>
   </form>
