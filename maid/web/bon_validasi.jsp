@@ -1,7 +1,7 @@
 <%-- 
     Document   : bon_validasi
     Created on : Dec 1, 2011, 11:54:53 AM
-    Author     : ACER
+    Author     : Olisus
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -14,7 +14,7 @@
     <body>
 
         <div id="container">
-            <form method='post' action="Dispatcher?page=terimakasih_telahpesan">    
+           <form method='post' action="Dispatcher?page=terimakasih_telahpesan">     
                 <div id="header">
                     <h1 id="logo2"><a>Persetujuan</a></h1>
                 </div>
@@ -58,27 +58,27 @@
                         </tr>
                         <tr align="center">
                             <td>Nasi Goreng</td>
-                            <td> <%= request.getParameter("nasigoyeng")%> </td>
+                            <td> ${nasigoyeng} </td>
                             <td>Rp 10.000</td>
                         </tr>
                         <tr align="center">
                             <td>Bakmi Goreng</td>
-                            <td> <%= request.getParameter("bakmigoyeng")%></td>
+                            <td> ${bakmigoyeng}</td>
                             <td>Rp 10.000</td>
                         </tr>
                         <tr align="center">
                             <td>Gurame Bakar</td>
-                            <td> <%= request.getParameter("guramebakar")%></td>
+                            <td> ${guramebakar}</td>
                             <td>Rp 25.000</td>
                         </tr>
                         <tr align="center">
                             <td>Ayam Bakar</td>
-                            <td> <%= request.getParameter("ayambakar")%></td>
+                            <td> ${ayambakar}</td>
                             <td>Rp 33.000</td>
                         </tr>
                         <tr align="center">
                             <td>Nila Bakar</td>
-                            <td> <%= request.getParameter("nilabakar")%></td>
+                            <td> ${nilabakar}</td>
                             <td>Rp 23.000</td>
                         </tr>
                         <tr align="center">
@@ -88,22 +88,22 @@
                         </tr>
                         <tr align="center">
                             <td>Soda Gembira</td>
-                            <td> <%= request.getParameter("odagembira")%></td>
+                            <td> ${odagembira}</td>
                             <td>Rp 10.000</td>
                         </tr>
                         <tr align="center">
                             <td>Es Teh</td>
-                            <td> <%= request.getParameter("esthe")%></td>
+                            <td> ${esthe}</td>
                             <td>Rp 2.000</td>
                         </tr>
                         <tr align="center">
                             <td>Es Jeruk</td>
-                            <td> <%= request.getParameter("eseyuk")%></td>
+                            <td> ${eseyuk}</td>
                             <td>Rp 4.000</td>
                         </tr>
                         <tr align="center">
                             <td>Es Dawet</td>
-                            <td> <%= request.getParameter("esawet")%></td>
+                            <td> ${esawet}</td>
                             <td>Rp 5.000</td>
                         </tr>
                     </table>
@@ -125,13 +125,15 @@
                     </blockquote>
                 </div>
             </form>
-            <form method='post' action="Dispatcher?page=loginpelanggan">
+            <div id="content">
+                <form method='post' action="Dispatcher?page=loginpelanggan">
                 <blockquote>
                         <blockquote>
                 <input type="submit" class="elipse" value="Tidak" action="Dispatcher?page=loginpelanggan"/>
-            </blockquote>
+                </blockquote>
                         </blockquote>
-               </form>
+                </form>
+            </div>
             <div id="footer" align="center">
                 <ul id="metaLink">
                     <li>&copy; copyright 2012 - <a>Kelompok 12 RBPL</a> Maid Online</li>
