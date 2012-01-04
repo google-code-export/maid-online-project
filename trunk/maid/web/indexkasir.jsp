@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : Nov 16, 2011, 11:45:31 PM
-    Author     : ACER
+    Author     : Ricko
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
