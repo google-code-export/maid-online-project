@@ -29,11 +29,14 @@
   </div>
   </form>
   <div id="footer" align="center">
+      <form method='post' action="Dispatcher?page=loginpelanggan">
+          <ul id="mainNav">
+            <li><a href="Dispatcher?page=pagekoki" title="Koki">Koki</a></li>
+            <li><a href="Dispatcher?page=pagekasir" title="Kasir">Kasir</a></li>
+          </ul>
+      </form>
 	
-  <ul id="mainNav">
-    <li><a href="Dispatcher?page=pagekoki" title="Koki">Koki</a></li>
-    <li><a href="Dispatcher?page=pagekasir" title="Kasir">Kasir</a></li>
-  </ul>
+  
 	
   <ul id="metaLink">
       <li>&copy; copyright 2012 - <a>Kelompok 12 RBPL</a> Maid Online</li>
