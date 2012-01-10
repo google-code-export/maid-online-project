@@ -4,6 +4,7 @@
     Author     : Ricko
 --%>
 
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,7 +14,7 @@
 </head>
 <body>
 <div id="container">
-  <form method='post' action="Dispatcher?page=loginpelanggan">
+  <form method='post' action="Dispatcher?page=index">
   <div id="header">
     <h1 id="logo"><a></a></h1>
   </div>
