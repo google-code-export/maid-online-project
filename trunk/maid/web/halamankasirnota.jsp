@@ -62,31 +62,31 @@
             <td>Nasi Goreng</td>
             <td>${nasigoyeng}</td>
             <td>Rp 10.000</td>
-            <td>${(nasigoyeng)*10000}</td>
+            <td><%--<a>Rp. </a>${(nasigoyeng)*4000}--%></td>
           </tr>
           <tr align="center">
             <td>Bakmi Goreng</td>
             <td>${bakmigoyeng}</td>
             <td>Rp 10.000</td>
-            <td>${(bakmigoyeng)*10000}</td>
+            <td><a><%--Rp. </a>${(bakmigoyeng)*4000}--%></td>
           </tr>
           <tr align="center">
             <td>Gurame Bakar</td>
             <td>${guramebakar}</td>
             <td>Rp 25.000</td>
-            <td>${(guramebakar)*25000}</td>
+            <td><%--<a>Rp. </a>${(guramebakar)*4000}--%></td>
           </tr>
           <tr align="center">
             <td>Ayam Bakar</td>
             <td>${ayambakar}</td>
             <td>Rp.33.000</td>
-            <td>${(ayambakar)*33000}</td>
+            <td><%--<a>Rp. </a>${(ayambakar)*4000}--%></td>
           </tr>
           <tr align="center">
             <td>Nila Bakar</td>
             <td>${nilabakar}</td>
-            <td>23000</td>
-            <td>${(nilabakar)*23000}</td>
+            <td>Rp.23000</td>
+            <td><%--<a>Rp. </a>${(nilabakar)*4000}--%></td>
           </tr>
           <tr align="center">
             <th><strong>MINUMAN</strong></th>
@@ -98,25 +98,25 @@
             <td>Soda Gembira</td>
             <td>${odagembira}</td>
             <td>Rp 10.000</td>
-            <td>${(odagembira)*10000}</td>
+            <td><%--<a>Rp. </a>${(odagembira)*4000}--%></td>
           </tr>
           <tr align="center">
             <td>Es Teh</td>
             <td>${esthe}</td>
             <td>Rp 2.000</td>
-            <td>${(esthe)*2000}</td>
+            <td><%--<a>Rp. </a>${(esthe)*4000}--%></td>
           </tr>
           <tr align="center">
             <td>Es Jeruk</td>
             <td>${eseyuk}</td>
             <td>Rp.4.000</td>
-            <td>${(eseyuk)*4000}</td>
+            <td><%--<a>Rp. </a>${(eseyuk)*4000}--%></td>
           </tr>
           <tr align="center">
             <td>Es Dawet</td>
             <td>${esawet}</td>
             <td>Rp.5000</td>
-            <td>${(esawet)*5000}</td>
+            <td><a>Rp. </a>${(esawet)*5000}</td>
           </tr>
           <tr align="center">
             <th>Total Harga </th>
@@ -138,12 +138,5 @@
   </ul>
   </div>
 </div>
-    
-    
-    
-
-</form>
 </body>
-</html>
-    </body>
 </html>
