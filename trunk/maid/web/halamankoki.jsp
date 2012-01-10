@@ -50,106 +50,71 @@
       </tr>
     </table>
     <table width="522" border="1">
-      <tr>
+      <tr align="center">
         <td width="163"><strong>MAKANAN</strong></td>
         <td width="68">JUMLAH</td>
         <td width="114">HARGA</td>
-        <td width="149">KETERANGAN</td>
       </tr>
-      <tr>
+      <tr align="center">
         <td>Nasi Goreng</td>
         <td>${nasigoyeng}</td>
         <td>Rp 10.000</td>
-        <th>
-        <form id="form1" name="form1" method="post" action="">
-            <label>
-            <input type="submit" name="button" id="button" value="HABIS" />
-              <input type="submit" name="button11" id="button11" value="ANTAR" />
-            </label>
-            </label>
-        </form></th>
       </tr>
-      <tr>
+      <tr align="center">
         <td>Bakmi Goreng</td>
         <td>${bakmigoyeng}</td>
         <td>Rp 10.000</td>
-        <td>
-        <label>
-        <label>
-          <input type="submit" name="button2" id="button2" value="HABIS" />
-          <input type="submit" name="button12" id="button12" value="ANTAR" />
-        </label>
-        </label>
-        </td>
       </tr>
-      <tr>
+      <tr align="center">
         <td>Gurame Bakar</td>
         <td>${guramebakar}</td>
         <td>Rp 25.000</td>
-        <td><form id="form3" name="form3" method="post" action="">
-          <label>
-          <label>
-        <label>
-        <label>
-        <label>
-        <label>
-        <label>
-        <label>
-            <input type="submit" name="button3" id="button3" value="HABIS" />
-            <input type="submit" name="button13" id="button13" value="ANTAR" />
-        </label>
-        </td>
       </tr>
-      <tr>
+      <tr align="center">
+        <td>Ayam Bakar</td>
+        <td>${ayambakar}</td>
+        <td>Rp 33.000</td>
+      </tr>
+      <tr align="center">
+        <td>Nila Bakar</td>
+        <td>${nilabakar}</td>
+        <td>Rp 23.000</td>
+      </tr>
+      <tr align="center">
         <td><strong>MINUMAN</strong></td>
         <td>JUMLAH</td>
         <td>HARGA</td>
-        <td>KETERANGAN</td>
       </tr>
-      <tr>
+      <tr align="center">
         <td>Soda Gembira</td>
         <td>${odagembira}</td>
         <td>Rp 10.000</td>
-        <td><form id="form4" name="form4" method="post" action="">
-          <label>
-          <label>
-        <label>
-        <label>
-        <label>
-        <label>
-        <label>
-        <label>
-            <input type="submit" name="button4" id="button4" value="HABIS" />
-            <input type="submit" name="button14" id="button14" value="ANTAR" />
-          </label>
-        </td>
-      </tr>
-      <tr>
+      <tr align="center">
         <td>Es Teh</td>
         <td>${esthe}</td>
         <td>Rp 9.000</td>
-        <td><form id="form5" name="form5" method="post" action="">
-          <label>
-          <label>
-        <label>
-        <label>
-        <label>
-        <label>
-        <label>
-        <label>
-            <input type="submit" name="button5" id="button5" value="HABIS" />
-          </label>
-        <label>
-          <input type="submit" name="button15" id="button15" value="ANTAR" />
-        </label>
-        </form></td>
       </tr>
+      <tr align="center">
+        <td>Es Jeruk</td>
+        <td>${eseyuk}</td>
+        <td>Rp 4.000</td>
+      </tr>
+      <tr align="center">
+        <td>Es Dawet</td>
+        <td>${esawet}</td>
+        <td>Rp 5.000</td>
+      </tr>
+      
     </table>
     <p>&nbsp;</p>      
-    <br><input type='submit' value='Refresh' class="elipse" action='Dispatcher?page=halamankoki'/></br>
+    <br><input type='submit' value='Antar' class="elipse" action='Dispatcher?page=halamankoki'/></br>
   </div>
   </form>
   <div id="footer" align="center">
+      <ul id="mainNav">
+        <li><a href="Dispatcher?page=validasikoki" title="validasi">Validasi</a></li>
+        <li><a href="Dispatcher?page=index" title="index">Logout</a></li>
+      </ul>
   <ul id="metaLink">
       <li>&copy; copyright 2012 - <a>Kelompok 12 RBPL</a> Maid Online</li>
   </ul>
