@@ -38,6 +38,7 @@
             :</td>
           <td>
           <select type="dropdown" name="select" id="nomor meja" value=""/>
+            <option id="0" value="null">-pilih no meja-</option>
             <option id="1">1</option>
             <option id="2">2</option>
             <option id="2">3</option>
@@ -49,7 +50,7 @@
           </td>
         </tr>
         </table>   
-    <br><input type='submit' value='Klik untuk Pesan Makanan' action="Dispatcher?page=pesan"/></br>
+    <br><input type='submit' value='Klik untuk Pesan Makanan'/></br>
   </div>
   </form>
   <div id="footer" align="center">
