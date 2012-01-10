@@ -45,6 +45,10 @@
   </div>
   </form>
   <div id="footer" align="center">
+      <ul id="mainNav">
+        <li><a href="" title=""></a></li>
+        <li><a href="Dispatcher?page=index" title="index">Logout</a></li>
+      </ul>
   <ul id="metaLink">
       <li>&copy; copyright 2012 - <a>Kelompok 12 RBPL</a> Maid Online</li>
   </ul>
