@@ -61,10 +61,11 @@
                             <td> ${nasigoyeng} </td>
                             <td>Rp 10.000</td>
                         </tr>
+                        
                         <tr align="center">
                             <td>Bakmi Goreng</td>
-                            <td> ${bakmigoyeng}</td>
-                            <td>Rp 10.000</td>
+                            <td>${bakmigoyeng} </td>
+                            <td>Rp.10000</td>
                         </tr>
                         <tr align="center">
                             <td>Gurame Bakar</td>
@@ -126,10 +127,10 @@
                 </div>
             </form>
             <div id="content">
-                <form method='post' action="Dispatcher?page=loginpelanggan">
+                <form method='post' action="Dispatcher?page=pesan">
                 <blockquote>
                         <blockquote>
-                <input type="submit" class="elipse" value="Tidak" action="Dispatcher?page=loginpelanggan"/>
+                <input type="submit" class="elipse" value="Tidak" action="Dispatcher?page=pesan"/>
                 </blockquote>
                         </blockquote>
                 </form>
