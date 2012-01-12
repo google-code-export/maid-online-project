@@ -8,10 +8,14 @@ import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  *
@@ -22,16 +26,28 @@ import javax.persistence.Table;
 @NamedQueries({
     @NamedQuery(name = "Pelanggan.findAll", query = "SELECT m FROM Pelanggan m")})
 public class Pelanggan implements Serializable {
-    
-     private static final long serialVersionUID = 1L;
-    @Id
     @Basic(optional = false)
-    @Column(name = "NAMA", length = 767)
+    @NotNull
+    @Size(min = 1, max = 767)
+    @Column(name = "NAMA")
     private String nama;
-    @Column(name = "NOMORMEJA", length = 767)
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 767)
+    @Column(name = "NOMORMEJA")
     private String nomormeja;
+    @Basic(optional = false)
+    @NotNull
     @Column(name = "LOGINSTAT")
-    private Boolean loginstat;
+    private boolean loginstat;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Basic(optional = false)
+    @NotNull
+    @Column(name = "ID")
+    private Integer id;
+    
+     
 
     public Pelanggan() {
     }
@@ -88,4 +104,30 @@ public class Pelanggan implements Serializable {
     public String toString() {
         return "model.Pelanggan[nama=" + nama + "]";
     }
-}
+
+    public Pelanggan(Integer id) {
+        this.id = id;
+    }
+
+    public Pelanggan(Integer id, String nama, String nomormeja, boolean loginstat) {
+        this.id = id;
+        this.nama = nama;
+        this.nomormeja = nomormeja;
+        this.loginstat = loginstat;
+    }
+
+   
+
+    public void setLoginstat(boolean loginstat) {
+        this.loginstat = loginstat;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }}
+
+   
