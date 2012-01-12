@@ -4,9 +4,11 @@
  */
 package controller;
 
+import entity.Pelanggan;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.lang.Integer;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -28,29 +30,32 @@ public class Dispatcher extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException, Exception {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         String page = request.getParameter("page");
         HttpSession session = request.getSession();
         RequestDispatcher dis = null;
-        String nasigoyengInt = null;
+         ControllerPelanggan controller = new ControllerPelanggan(request);
+         Pelanggan pelanggan = new Pelanggan();
+        String pesan = "  ";
+        request.setAttribute("pesan", pesan);
 
         if (page != null) {
             if (page.equals("pesan")) {
-                String namaPelanggan = request.getParameter("namaPelanggan");
-                session.setAttribute("namaPelanggan", namaPelanggan);
-                String select = request.getParameter("select");
-                session.setAttribute("select", select);
-                dis = request.getRequestDispatcher("Pesan.jsp");
+                    
+                    String namaPelanggan = request.getParameter("namaPelanggan");
+                    session.setAttribute("namaPelanggan", namaPelanggan);
+                    String select = request.getParameter("select");
+                    session.setAttribute("select", select);
+                    controller.setRegistrasi();
+                    dis = request.getRequestDispatcher("Pesan.jsp");
+                    
+                    
             } else if (page.equals("loginpelanggan")) {
                 dis = request.getRequestDispatcher("loginpelanggan.jsp");
-            } else if (page.equals("pagekoki")) {
-                dis = request.getRequestDispatcher("indexkoki.jsp");
             } else if (page.equals("pagekasir")) {
                 dis = request.getRequestDispatcher("indexkasir.jsp");
-            } else if (page.equals("halamankoki")) {
-                dis = request.getRequestDispatcher("halamankoki.jsp");
             } else if (page.equals("halamankasir")) {
                 dis = request.getRequestDispatcher("halamankasir.jsp");
             } else if (page.equals("halamankasirnota")) {
@@ -77,11 +82,32 @@ public class Dispatcher extends HttpServlet {
                 dis = request.getRequestDispatcher("bon_validasi.jsp");
             } else if (page.equals("terimakasih_telahpesan")) {
                 dis = request.getRequestDispatcher("terimakasih_telah memesan");
+            } else if (page.equals("pagekoki")) {
+                dis = request.getRequestDispatcher("indexkoki.jsp");
+            } else if (page.equals("halamankoki")) {
+                String validasi1 = request.getParameter("validasi1");
+                session.setAttribute("validasi1", validasi1);
+                String validasi2 = request.getParameter("validasi2");
+                session.setAttribute("validasi2", validasi2);
+                String validasi3 = request.getParameter("validasi3");
+                session.setAttribute("validasi3", validasi3);
+                String validasi4 = request.getParameter("validasi4");
+                session.setAttribute("validasi4", validasi4);
+                String validasi5 = request.getParameter("validasi5");
+                session.setAttribute("validasi5", validasi5);
+                String validasi6 = request.getParameter("validasi6");
+                session.setAttribute("validasi6", validasi6);
+                String validasi7 = request.getParameter("validasi7");
+                session.setAttribute("validasi7", validasi7);
+                String validasi8 = request.getParameter("validasi8");
+                session.setAttribute("validasi8", validasi8);
+                String validasi9 = request.getParameter("validasi9");
+                session.setAttribute("validasi9", validasi9);
+                dis = request.getRequestDispatcher("halamankoki.jsp");
+            } else if (page.equals("validasikoki")) {
+                dis = request.getRequestDispatcher("validasikoki.jsp");
             } else if (page.equals("index")) {
                 dis = request.getRequestDispatcher("index.jsp");
-
-
-
             } else {
                 dis = request.getRequestDispatcher("index.jsp");
 
@@ -103,7 +129,11 @@ public class Dispatcher extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try {
+            processRequest(request, response);
+        } catch (Exception ex) {
+            Logger.getLogger(Dispatcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /** 
@@ -116,7 +146,11 @@ public class Dispatcher extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try {
+            processRequest(request, response);
+        } catch (Exception ex) {
+            Logger.getLogger(Dispatcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /** 
