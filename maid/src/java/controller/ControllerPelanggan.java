@@ -8,6 +8,7 @@ package controller;
  *
  * @author Ricko Shin
  */
+import controller.exceptions.NonexistentEntityException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
@@ -26,33 +27,25 @@ public class ControllerPelanggan {
      * Fungsi untuk menyimpan dan membuat pelanggan baru dengan menerima input dari jsp
      * kemudian akan disimpan dalam db
      */
-    public void setRegistrasi(Pelanggan pelanggan) {
+   public void setRegistrasi() throws Exception {
+       Pelanggan pelanggan =new Pelanggan ();
         String nama = request.getParameter("namaPelanggan");
         String nomormeja = request.getParameter("select");
         HttpSession session = request.getSession();
         JpaPelanggan registrasi = new JpaPelanggan();
-
-        /**
-         * validasi terhadap input dalam jsp
-         * apabila seluruh input tidak diisikan maka gagal dalam menyimpan objek baru yang
-         * telah diinputkan sebelumnya
-         */
-        if (nama.equals("") || nomormeja.equals("")) {
-            request.setAttribute("pesan", "Isikan seluruh field yang tersedia sesuai dengan ketentuan");
-            pelanggan.setLoginstat(false);//set login stat false agar pengguna kembali ke halam awal
-        } else {
 
                     pelanggan.setLoginstat(true); //melakukan set terhadap objek baru
                     pelanggan.setNama(nama);
                     pelanggan.setNomormeja(nomormeja);
 
                     try {
-                        registrasi.create(pelanggan);//eksekusi membuat objek baru dan menyimpan
+                    registrasi.create(pelanggan);//eksekusi membuat objek baru dan menyimpan
 
                     } catch (Exception e) {
                     }
+                     
                
-            }
+            
         }
 
 
@@ -70,7 +63,7 @@ public class ControllerPelanggan {
     /**
      * Fungsi untuk menghapus objek dari db dengan input berupa nama
      */
-    public void setDeletePelanggan() {
+    public void setDeletePelanggan() throws NonexistentEntityException {
         String nama = request.getParameter("nama");
         HttpSession session = request.getSession();
         Pelanggan pelanggan = new Pelanggan();
@@ -79,7 +72,7 @@ public class ControllerPelanggan {
         try {
             deletePelanggan.destroy(pelanggan.getNama()); //eksekusi menghapus
         } catch (Exception e) {
-        }
+    }
     }
 
     /**
@@ -93,5 +86,8 @@ public class ControllerPelanggan {
         pelanggan = aturPelanggan.findPelangganByNama(nama);//mencari objek bersarkan nama
         session.setAttribute("pelanggan", pelanggan);//memasukkan objek kedalam session
     }
-    
-}
+
+
+
+
+    }
